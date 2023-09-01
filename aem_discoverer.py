@@ -45,7 +45,7 @@ def normalize_url(base_url, path):
 
 
 def http_request(url, method='GET', data=None, additional_headers=None, proxy=None):
-    headers = {'User-Agent': 'curl/7.30.0'}
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0'}
     if additional_headers:
         headers.update(additional_headers)
 

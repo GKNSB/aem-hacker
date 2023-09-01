@@ -118,11 +118,11 @@ def error(message, **kwargs):
 def http_request(url, method='GET', data=None, additional_headers=None, proxy=None, debug=False):
 
     with requests.Session() as session:
-        headers = {'User-Agent': 'curl/7.30.0'}
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0'}
         if additional_headers:
             headers.update(additional_headers)
         if extra_headers:
-        
+
             headers.update({
                 # Retrieve the headers configured as extra headers but not controlled
                 # by the application in this specific request
@@ -152,7 +152,7 @@ def http_request(url, method='GET', data=None, additional_headers=None, proxy=No
 
 
 def http_request_multipart(url, method='POST', data=None, additional_headers=None, proxy=None, debug=False):
-    headers = {'User-Agent': 'curl/7.30.0'}
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0'}
     if additional_headers:
         headers.update(additional_headers)
     if extra_headers:
@@ -166,7 +166,7 @@ def http_request_multipart(url, method='POST', data=None, additional_headers=Non
 
     if not proxy:
         proxy = {}
-    
+
     if debug:
         print('>> Sending {} {}'.format(method, url))
 
